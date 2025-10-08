@@ -1,18 +1,18 @@
-import ErrorPage from './components/ErrorPage.jsx'
-import App from './App.jsx'
-import Profile from './components/Profile.jsx'
+import App from "./App"
+import ErrorPage from "./components/ErrorPage"
+import Profile from "./components/Profile"
 
 const routes = [
     {
         path: "/",
         element: <App />,
-        errorElement: <ErrorPage />
+        errorElement: <ErrorPage />,
+
     },
     {
-        path: "profile/:name",
-        element: <Profile />,
-        
-    },
+        path: 'profile',
+        element: <Profile />
+    }
 ]
 
 export default routes
